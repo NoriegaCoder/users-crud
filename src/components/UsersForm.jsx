@@ -2,10 +2,10 @@ import React, { useEffect } from 'react'
 import { useForm } from 'react-hook-form'
 import './style/UsersForm.css'
 
-const UsersForm = ({postUsers, editUser, updateUser, setEditUser, isOpen, setIsOpen}) => {
-    const {handleSubmit, register, reset, adding, setAdding} = useForm();
+const UsersForm = ({postUsers, editUser, updateUser, setEditUser, isOpen, setIsOpen, adding, setAdding}) => {
+    const {handleSubmit, register, reset,  } = useForm();
     
-    /*
+    
     useEffect(() => {
         reset({
             email: '',
@@ -14,7 +14,7 @@ const UsersForm = ({postUsers, editUser, updateUser, setEditUser, isOpen, setIsO
             last_name: '',
             birthday: '',
         })
-    }, [adding]) */
+    }, [adding]) 
     
 
     const submit = (data) => {        
