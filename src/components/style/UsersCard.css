@@ -54,3 +54,35 @@ hr {
 ion-icon {
     --ionicon-stroke-width: 45px;
   }
+
+.overlay {
+    position: fixed;
+    transform: scale(0);
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    backdrop-filter: blur(1px);
+    z-index: 10;
+}
+
+.overlay.able{
+    transform: scale(1);
+}
+
+.overlayWrapper {
+    background-color: #B8CBE2;
+    border: 2px solid #A6A29F ;
+    border-radius: 5px;
+    padding: 3rem;
+    z-index: 10;
+    position: fixed;
+}
+
+.overlayCloser {
+    width: 100vw;
+    height: 100vh;
+    z-index: 9;
+}

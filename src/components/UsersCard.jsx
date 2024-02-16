@@ -1,10 +1,12 @@
-import React from 'react'
+import React, { useState } from 'react'
 import './style/UsersCard.css'
 
-const UsersCard = ({user, deleteUser, setEditUser, isOpen, setIsOpen}) => {
+const UsersCard = ({user, deleteUser, setEditUser, isOpen, setIsOpen, borrado, setBorrado}) => {
+    
 
     const handleDelete = () => {
         deleteUser('/users', user.id)
+        setBorrado(true)
     }
 
     const handleEdit = () => {

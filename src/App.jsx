@@ -26,13 +26,30 @@ function App() {
     setAdding(!adding)
 }
   /*---------------------- */
-  
+  const [borrado, setBorrado] = useState(true)
+
+  const handleConfirm = e => {
+    setBorrado(false)
+  }
+
+
+
+
+   /*---------------------- */
   return (
     <div className='wrapper'>
       <header className='header'>
         <h1>Users</h1>
         <button onClick={handleOpen} className='headerBtn'>+ New user</button>
       </header>
+
+      <div className={`overlay ${borrado&&'able'}`}>
+      <div className='overlayCloser' onClick={handleConfirm}></div>
+        <div className='overlayWrapper'>
+            <h3 className='ovarlayTitle'>Succesfuly deleted</h3>
+            <button className='overlayBtn' onClick={handleConfirm}>Ok</button>
+        </div>
+        </div>
       
       <UsersForm
       postUsers={postUsers}
@@ -55,6 +72,8 @@ function App() {
           setEditUser={setEditUser}
           isOpen={isOpen}
           setIsOpen={setIsOpen}
+          borrado= {borrado}
+          setBorrado={setBorrado}
           />
           
           ))
