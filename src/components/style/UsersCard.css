@@ -1,0 +1,56 @@
+.cardBackground {
+    background-color: #B8CBE2;
+    border: 2px solid #A6A29F;
+    width: 300px;
+    height: 250px;
+    margin: 1rem;
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    justify-content: space-between;
+}
+
+hr {
+    width: 90%;
+    margin: 0;
+}
+
+.cardList {
+    list-style: none;
+    padding-left: 0;
+    width: 100%;
+    margin: 0;
+}
+
+.cardItem:first-child {
+    margin-bottom: 1rem;
+}
+
+.cardItem span{
+    font-weight: 600;
+    font-size: small;
+}
+
+.deleteBtn{
+    background-color: #D0112B;
+    color: aliceblue;
+    padding: .5rem;
+}
+
+.cardName {
+    margin-bottom: 0;
+}
+
+.editBtn {
+    padding: .5rem;
+    margin-left: 1rem;
+}
+
+.btnWrapper{
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+ion-icon {
+    --ionicon-stroke-width: 45px;
+  }
