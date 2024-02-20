@@ -5,7 +5,7 @@ import UsersForm from './components/UsersForm'
 import UsersCard from './components/UsersCard'
 
 
-const urlBase = 'http://users-crud.academlo.tech'
+const urlBase = 'https://users-crud.academlo.tech'
 
 
 function App() {  
