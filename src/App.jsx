@@ -26,7 +26,7 @@ function App() {
     setAdding(!adding)
 }
   /*---------------------- */
-  const [borrado, setBorrado] = useState(true)
+  const [borrado, setBorrado] = useState(false)
 
   const handleConfirm = e => {
     setBorrado(false)
