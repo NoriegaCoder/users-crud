@@ -5,7 +5,7 @@ import UsersForm from './components/UsersForm'
 import UsersCard from './components/UsersCard'
 
 
-const urlBase = 'https://crud-814q.onrender.com'
+const urlBase = 'https://crud-814q.onrender.com/api/v1'
 
 
 function App() {  
